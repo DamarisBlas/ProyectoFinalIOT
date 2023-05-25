@@ -1,0 +1,283 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+*{
+  font-family: 'Quicksand', sans-serif, 'Oswald';
+  
+
+}
+
+h1 {
+  font-size: 1.8rem; 
+  color: white;
+}
+p { 
+  font-size: 1.4rem;
+}
+.topnav { 
+  overflow: hidden; 
+  background-color: #0f7e30;
+}
+.nav-link { 
+  
+  background-color: #187734;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 10px;
+  margin: 5px;
+  font-family: "Oswald";
+  
+}
+
+.content { 
+  padding: 5%;
+}
+.card-grid { 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  display: grid; 
+  grid-gap: 2rem; 
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.card { 
+  background-color: white; 
+  box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5);
+}
+.card-title { 
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #034078
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url("https://i.postimg.cc/Wzqx3j77/logo3.png");
+  background-attachment: fixed;
+
+
+  }
+header{
+  height: 100px;
+  background: white;
+  box-shadow: 1px 2px 10px rgba(65, 65, 65, 0.555);
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  display: flex;
+}
+header img{
+  height: 100%;
+  position: absolute;
+}
+header h1{
+  margin: auto auto;
+  font-family: 'Oswald', cursive;
+  font-weight: 400;
+  color: #4b8121;
+  line-height:60px;
+    font-size: 38px;
+    letter-spacing: .1em;
+    text-shadow: 1px 3px 1px #45b43b;
+      
+}
+footer{
+  height: 20px;
+  position: fixed;  
+  bottom: 0px;  
+  width: 100%;  
+  background-color: #13232e;  
+  color: white;  
+  text-align: center; 
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 12px;
+  z-index: 100;
+}
+html {
+  text-align: center;
+}
+
+p {
+  font-size: 1.5rem;
+}
+button {
+  display: inline-block;
+  background-color: #319e1b;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 6px 10px;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 2px;
+  cursor: pointer;
+}
+.units {
+  font-size: 1.2rem;
+ }
+.sensor-labels {
+  font-size: 1.5rem;
+  vertical-align:middle;
+  padding-bottom: 15px;
+}
+/*Integrantes*/
+
+.card {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  margin: 20px;
+}
+
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: rgba(0,0,0,.4);
+  text-align: center;
+}
+
+.card .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: rgb(17, 95, 24);
+  padding: 15px;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+
+.card .back .link {
+  border-top: solid 1px #f3f3f3;
+  height: 50px;
+  line-height: 50px;
+}
+
+.card .back .link a {
+  color: #f3f3f3;
+}
+
+.card .back h3 {
+  font-size: 20px;
+  font-family:  'Oswald';
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.card .back p {
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-family:  'Oswald';
+
+} 
+
+.card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+/*Tabla de información*/
+table {
+  width: 90vw !important;
+}
+.styled-table {
+  border-radius: 50px;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}  
+.styled-table thead tr {
+
+  background-color: #1f9229;
+  color: #ffffff;
+  text-align: left;
+    
+}
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+    
+}
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #13970e;
+}
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+/* Reloj digital */
+.clock{
+  width: 550px;
+  height: 150px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.clock div{
+  position: relative;
+  background-color: #ffffff;
+  height: 100%;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 60px;
+  color: #202020;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+  letter-spacing: 3px;
+}
+.clock span{
+  font-weight: bolder;
+  font-size: 60px;
+  color: #ffffff;
+}
